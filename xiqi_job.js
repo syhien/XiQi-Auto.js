@@ -12,7 +12,7 @@ while (1) {
             skipTag = !skipTag;
             log(i.text());
             i.parent().click();
-            sleep(4000 + random(0, 1000));
+            sleep(5000 + random(0, 1000));
             if (text("请选择要使用的应用").exists()) { // MIUI 跳过打开淘宝
                 click("取消");
             }
