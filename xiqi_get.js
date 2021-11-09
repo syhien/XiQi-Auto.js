@@ -1,5 +1,10 @@
 auto.waitFor();
 app.launchApp("菜鸟");
+sleep(1000);
+let skipAD = textStartsWith("跳过").findOnce();
+if (skipAD) {
+    skipAD.click();
+}
 
 while (1) {
     let bubble = text("任务气泡").findOnce();
