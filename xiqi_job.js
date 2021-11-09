@@ -18,7 +18,7 @@ while (1) {
                 }
                 sleep(1000);
                 click("取消");
-                sleep(1000);
+                sleep(2000);
                 let skipAD = textStartsWith("跳过").findOnce();
                 if (skipAD) {
                     skipAD.click();
